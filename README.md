@@ -16,8 +16,8 @@ Por que usar el API Gateway de AWS
 6. Escalabilidad: API Gateway maneja automáticamente la escalabilidad, permitiendo que tu API soporte grandes volúmenes de tráfico sin necesidad de configuraciones complejas o gestión de infraestructura adicional.
 
 Mas informacion:
-    - https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html
-    - https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-throttling.html
+  - https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html
+  - https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-throttling.html
 
 ## API forwarder
 
@@ -44,5 +44,5 @@ La API va a estar funcionando en http://localhost:5000.
 Mas information: https://docs.python-guide.org/dev/virtualenvs/#virtualenvironments-ref
 
 Ejemplos de referencia:
-    - https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
-    - https://www.moesif.com/blog/technical/api-development/Building-RESTful-API-with-Flask/
+  - https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
+  - https://www.moesif.com/blog/technical/api-development/Building-RESTful-API-with-Flask/
