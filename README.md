@@ -21,6 +21,8 @@ Mas informacion:
 
 ## API forwarder
 
+El api_forwarder se utilizaria dentro de una lambda en el API Gateway para poder distribuir los requests.
+
 Para poder usar el codigo hay que hacer lo siguiente:
 
 1. Importar las librerias necesarias: Flask para poder crear la API y Requests para poder hacer el forwarding
