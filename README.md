@@ -12,7 +12,7 @@ Por que usar el API Gateway de AWS
 2. Facilidad de configuración: Puedes establecer límites de tasa a nivel global, por método de API, o incluso a nivel de cliente usando planes de uso. Esto te brinda flexibilidad para gestionar el tráfico de manera granular.
 3. Seguridad y protección: Al limitar la tasa de solicitudes, puedes mitigar ataques de denegación de servicio (DoS) y otros tipos de abuso que puedan comprometer la disponibilidad y el rendimiento de tu API.
 4. Métricas y monitoreo: AWS API Gateway proporciona herramientas integradas de monitoreo y métricas a través de Amazon CloudWatch. Puedes rastrear las tasas de solicitudes, respuestas y errores para obtener una visión clara del uso y rendimiento de tu API.
-5. Integración con otros servicios de AWS: API Gateway se integra bien con otros servicios de AWS, como AWS Lambda, AWS WAF (Web Application Firewall), y Amazon Cognito, permitiendo una gestión integral de la seguridad y la escalabilidad.
+5. Integración con otros servicios de AWS
 6. Escalabilidad: API Gateway maneja automáticamente la escalabilidad, permitiendo que tu API soporte grandes volúmenes de tráfico sin necesidad de configuraciones complejas o gestión de infraestructura adicional.
 
 Mas informacion:
