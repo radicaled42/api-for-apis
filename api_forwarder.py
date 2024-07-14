@@ -1,16 +1,36 @@
 from flask import Flask, request, Response
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import requests
+import argparse
 
 app = Flask(__name__)
 
+# Inicializar argumentos
+parser = argparse.ArgumentParser()
+parser.add_argument("-r", "--RateLimit", default="10000", help="Rate Limit per second")
+args = parser.parse_args()
+
+if args.RateLimit:
+    print("Rate Limit: % s" % args.RateLimit)
+
+# Setup limiter
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=["1000 per second"],
+    storage_uri="memory://"
+)
+
 # Mapeo de las API externas
 API_MAPPING = {
-    'api1': 'https://api.test2.com',
+    'objects': 'https://api.restful-api.dev',
     'api2': 'https://api.test3.com',
 
 }
 
 @app.route('/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
+@limiter.limit(f"{args.RateLimit} per second")
 def forward_request(subpath):
     # Obtener el destino a partir del path
     destination = subpath.split('/')[0]
