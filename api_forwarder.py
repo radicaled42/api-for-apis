@@ -24,7 +24,7 @@ limiter = Limiter(
 
 # Mapeo de las API externas
 API_MAPPING = {
-    'objects': 'https://api.restful-api.dev',
+    'fact': 'https://catfact.ninja',
     'api2': 'https://api.test3.com',
 
 }
